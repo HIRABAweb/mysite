@@ -1,0 +1,524 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+body, h1, h2, h3, h4, p {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;
+}
+body{
+  background-color: #C3C3C3;
+  position: relative;
+}
+*{
+  font-weight: normal;
+  color: #666666;
+}
+.container{
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+}
+.h-title{
+  height: 100px;
+  border-top: 5px solid blue;
+  position: relative;
+}
+
+.h-title  .h-logo{
+  width: 300px;
+  position: absolute;
+  /* absoluteを指定すると高さが０になる */
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+
+}
+.h-nav{
+  border-top: 1px solid #d2d2d2;
+}
+.h-menu{
+  letter-spacing: -.4em;
+}
+.h-list{
+  display: inline-block;
+  width: calc(100%/6);
+  /* 100%幅を六等分　しかしカラム落ちが改行のスペースによって起きている */
+  position: relative;
+  letter-spacing: normal;
+  /* letter-spacing(-.4em)を元に戻した */
+  height: 64px;
+  /* 画像に食い込んでいたので、高さを指定 */
+  border-right: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  /* 要素の中に線が含まれるようになる */
+  vertical-align: bottom;
+  /* 下の余白が消えた */
+}
+.h-list:hover .h-l-top{
+  color: #0e36ca;
+  transition: .3s;
+}
+.h-list:hover{
+  background-color: #e6ebfa;
+}
+/* .h-list:hover .h-l-box{
+  border-left: 3px solid #103de4;
+} 
+これだとボーダー出現時に文字が動いてしまう*/
+.h-list:hover .h-l-box::before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #0e36ca;
+  left: 4px;
+  /* これならボーダー出現時に文字が動かない */
+}
+
+.h-l-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  /* border-leftの場所をずらした */
+  text-align: center;
+}
+.h-l-top{
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.h-l-bottom{
+  font-size: 10px;
+  color: #bababa;
+  text-align: center;
+}
+.active{
+  background-color: #e6ebfa;
+}
+.active .h-l-box::before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #0e36ca;
+  left: 4px;
+}
+.active .h-l-top{
+}
+.h-image{
+  max-width: 100%;
+  height: auto;
+  /* ある幅が決まっていてその中に画像を収めたいときに使えるテンプレ */
+}
+.contents{
+  clear: both;
+  overflow: hidden;
+  padding: 3%;
+  background: #fff;
+
+}
+.main{
+  float: left;
+  width: 70%;
+}
+.main section+section {
+  margin-top: 50px;
+}
+.m-h2{
+  background: #0f3bda;
+  color: #fff;
+  padding: 14px 12px 14px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.m-h2::first-letter{
+  border-left: 3px solid #8e933f;
+  padding-left: 16px;
+}
+.m-h3{
+  background: #f6f6f6;
+  color: #666666;
+  padding: 14px 12px 14px 24px;
+  border-radius: 4px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+}
+.m-section{
+  color: #666666;
+}
+.m-info{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.m-info-date{
+  float: left;
+  padding: 8px 32px 8px 0;
+  color: blue;
+}
+.m-info-content{
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+.m-info-red{
+  background: red;
+  font-size: 11px;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.m-log{
+  text-align: right;
+  padding-top: 24px;
+}
+.m-log a{
+  color: #666666;
+}
+.m-p{
+  font-size: 15px;
+  color: #666666;
+  margin: 24px 26px;
+  line-height: 2;
+}
+.m-point{
+  color: red;
+}
+.m-p img{
+  width: 100%;
+  height: auto;
+}
+.side{
+  float: right;
+  width: 25%;
+
+}
+.s-framebox{
+  padding: 18px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  margin-bottom: 24px;
+  color: #666666;
+}
+.s-box{
+  margin-bottom: 24px;
+  color: #666666;
+}
+.s-h4{
+  padding: 28px 10px;
+  border-top: 5px solid blue;
+  background: #eeeeee;
+  /* cssの敬称　文字の色は親要素の継承される */
+  border-bottom: 1px solid #d2d2d2;
+  color: #666666;
+  font-weight: bold;
+}
+.s-list{
+  border-bottom: 1px solid #d2d2d2;
+  padding: 15px;
+  list-style: none;
+  overflow: hidden;
+  line-height: 1.2;
+}
+.s-list:hover{
+  background: white;
+}
+.s-list a{
+  text-decoration: none;
+  color: #666666;
+}
+.s-list a:hover{
+  color: blue;
+}
+.s-img{
+  width: 20%;
+  float: left;
+  margin-right: 5px;
+}
+.s-l-title{
+  color: blue;
+  font-size: 11px;
+}
+.s-l-description{
+  font-size: 11px;
+}
+.s-company-name{
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 2;
+}
+.s-company-address{
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+/* company */
+form{
+  text-align: center;
+}
+table{
+ margin-bottom: 20px; 
+}
+th, td{
+  border: 1px solid  #d2d2d2;
+  padding: 15px;
+}
+th{
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+td{
+  text-align: left;
+}
+.m-f-category{
+  width: 50%;
+}
+#m-f-info{
+  width: 90%;
+}
+.button{
+  width: 20%;
+}
+.m-p-point{
+  color: red;
+  font-weight: bold;
+}
+.m-p-back{
+  background: #CCCCCC;
+}
+/* company */
+
+/* service */
+.m-a{
+  text-decoration: none;
+}
+.card{
+  border: 1px solid #d2d2d2;
+  padding: 20px;
+  background: linear-gradient(#fff, #eee);
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px #ccc;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 20px;
+
+}
+.no-card{
+  border: 1px solid #d2d2d2;
+  padding: 20px;
+  background: linear-gradient(#fff, #eee);
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px #ccc;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 20px;
+
+}
+.no-card:hover{
+  box-shadow: 0px 10px 20px #ccc;
+  transform: translateY(-5px);
+  transition: .3s;
+}
+.no-card:hover{
+  box-shadow: 0px 10px 20px #ccc;
+  transform: translateY(-5px);
+  transition: .3s;
+}
+.m-img{
+  width: 25%;
+  float: left;
+  margin-right: 10px;
+}
+.card:hover{
+  box-shadow: 0px 10px 20px #ccc;
+  transform: translateY(-5px);
+  transition: .3s;
+}
+.card::before{
+  content: "→";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background: #666;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  padding-top: 5px;
+}
+.m-c-title{
+  color: #0e36ca;
+  line-height: 2;
+}
+.m-c-description{
+  line-height: 2;
+}
+
+/* service */
+.m-section table{
+  width: 100%;
+}
+/* service */
+/* link */
+.m-li-h2{
+  background: #0f3bda;
+  color: #fff;
+  padding: 14px 12px 14px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.m-li-h2::first-letter{
+  border-left: 3px solid #8e933f;
+  padding-left: 16px;
+}
+.m-li-p{
+  padding-left: 24px;
+  padding-bottom: 24px;
+  margin-top: 0px;
+}
+/* link */
+footer{
+  padding: 12px ;
+}
+.footer{
+  background: #0E36CA;
+  clear: both;
+  color: #fff;
+  font-size: 13px;
+  line-height: 2;
+  text-align: center;
+  font-weight: normal;
+}
+.footer a{
+  color: #FFF;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #0E36CA;
+  transition: .5s;
+}
+.secondp{
+  font-size: 12px;
+  line-height: 24px;
+}
+  #pagetop::before{
+    content: "↑";
+    position: fixed;
+    bottom: 95px;
+    right: 60px;
+    color: #fff;
+    background: #666;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+  }

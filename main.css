@@ -1,0 +1,382 @@
+.body {
+  padding: 4px 8px;
+  margin-top: 12px;
+  font-family: Helvetica, 游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
+  color: #333333;
+}
+p{
+  color: #333333;
+  font-size: 14px;
+}
+
+.content {
+  overflow: hidden;
+}
+/* header */
+.h-header{
+  margin-top: 100px;
+}
+.h-h1{
+  width: 960px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.h-nav{
+  width: 960px;
+  padding: 0 auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: right;
+}
+.h-nav-menu{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav ul li{
+  flex-basis: 100px;
+  font-size: 14px;
+  letter-spacing: .1em;
+}
+nav ul li:hover{
+  text-decoration: underline;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #333333;
+}
+.mainimg {
+  background: #eee;
+  margin: 0 calc(50% - 50vw);
+  padding: 0 calc(50vw - 50% );
+  width: 100vw;
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+.bodyimg{
+  max-width: 960px;
+  width: 100%;
+  height: auto;
+}
+
+.inner {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #eee;
+}
+/* hedaer end */
+
+/* main */
+.main{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.m-section{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 120px;
+
+}
+.m-h2{
+  font-size: 50px;
+  color: #333333;
+  margin-bottom: 65px;
+  text-align: center;
+  flex-basis: 100%;
+  font-weight: lighter;
+  font-family: Lato, sans-serif;
+}
+.m-about{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 14px;
+}
+.m-about-date{
+  flex-basis: 100px;
+}
+.m-about-content{
+  flex-basis: 820px;
+}
+.m-section-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+.m-h3{
+  font-size: 25px;
+  color: #333333;
+  margin: 0 0 20px;
+}
+.a-img{
+  width: 30%;
+  height: 30%;
+  margin: 0 0 13px;
+  padding: 9%;
+}
+article{
+  width: 30%;
+  text-align: center;
+}
+section ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+ul li{
+  width: 30%;
+  text-align: center;
+  list-style: none;
+}
+.w-img{
+  width: 100%;
+  height: auto;
+  margin: 0 0 13px;
+  border: 1px solid #cccccc;
+}
+.m-section-3{
+  text-align: center;
+  margin: 0;
+  padding: 0 auto;
+  margin-bottom: 100px;
+}
+.c-p{
+  text-align: left;
+  font-size: 14px ;
+  font-family: Helvetica, 游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
+  width: 42%;
+  padding: 0 29%;
+  margin: 0;
+}
+.c-form{
+  margin-top: 50px;
+  text-align: center;
+
+}
+form tr{
+  text-align: left;
+}
+tr th{
+  vertical-align: middle;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Helvetica, 游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
+}
+tr td{
+  font-size: 16px;
+}
+form table{
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+  padding: 0 auto;
+  margin: 0 auto 10px;
+  width: 40%;
+}
+
+.m-c-category{
+  width: 80%;
+  margin-bottom: 10px;
+}
+.m-c-detail{
+  width: 100%;
+}
+footer{
+  padding: 12px ;
+}
+.footer{
+  clear: both;
+  color: #333333;
+  font-size: 13px;
+  line-height: 2;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+.footer a{
+  color: #333333;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #333333;
+  transition: .5s;
+  text-decoration: underline;
+}
+.secondp{
+  font-size: 12px;
+  line-height: 24px;
+}
+  #pagetop::before{
+    content: "↑";
+    position: fixed;
+    bottom: 95px;
+    right: 60px;
+    color: #fff;
+    background: #666;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+/* responsive */
+ 
+@media screen and (max-width: 960px){
+    .h-nav{
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: right;
+  }
+  .h-nav-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav ul li{
+    flex-grow: 1;
+    font-size: 12px;
+    letter-spacing: .1em;
+  }
+    .h-header{
+      margin-top: 50px;
+    }
+    .h-h1{
+      font-size: 24px;
+    }
+    .mainimg{
+      margin-bottom: 60px;
+    }
+    .m-section{
+      margin-bottom: 60px;
+    }
+    .m-h2{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .m-section-2{
+      margin-bottom: 30px;
+    }
+    .m-about{
+      margin-top: 0px;
+      font-size: 14px;
+    }
+  }
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}

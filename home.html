@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIRABA's Portfolio</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <div class="content">
+    <header class="h-header">
+      <div class="h-h1">
+        <h1>HIRABA's Portfolio</h1>
+      </div>
+      <nav class="h-nav">
+        <ul class="h-nav-menu">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Works">Works</li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="inner">
+
+        <div class="mainimg">
+          <img class="bodyimg" src="images\standself.jpg" alt="トップ画像">
+        </div>
+    </header>
+
+    <main class="main">
+      <section class="m-section">
+        <h2 class="m-h2" id="About">About Me</h2>
+        <dl class="m-about">
+          <dt class="m-about-date">2020年7月</dt>
+          <dd class="m-about-content">プログラミングの独学を始めました。</dd>
+          <dt class="m-about-date">2020年10月</dt>
+          <dd class="m-about-content">プログラミングコミュニティに入会し、より一層研鑽を積んでいます。</dd>
+          <dt class="m-about-date"> 2020年12月</dt>
+          <dd class="m-about-content">就職活動をしております。</dd>
+
+        </dl>
+      </section>
+      <section class="m-section-2">
+        <h2 class="m-h2" id="Skills">Skills</h2>
+        <article>
+          <img class="a-img" src="images/html5.svg" alt="HTML5">
+
+
+        </article>
+        <article>
+          <img class="a-img" src="images/css3.svg" alt="CSS3">
+        </article>
+        <article>
+          <img class="a-img" src="images/bootstrap-solid.svg" alt="Bootstrap">
+        </article>
+      </section>
+      <section class="m-section-2">
+        <h2 class="m-h2" id="Works">Works</h2>
+        <ul>
+          <li>
+            <a href="work1/index.html">
+              <img class="w-img" src="images/corporate1.png" alt="コーポレートサイト(1)">
+            </a>
+          </li>
+          <li>
+            <a href="work3(responsive)/home.html">
+              <img class="w-img" src="images/corporate2.png" alt="コーポレートサイト(2)">
+            </a>
+          </li>
+        
+        </ul>
+      </section>
+      <section class="m-section-3">
+        <h2 class="m-h2" id="Contact">Contact</h2>
+        <p class="c-p">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>
+          下記フォームよりわかる範囲でご記入ください。
+          <br>必須の項目は必ずご記入お願いします。
+        </p>
+        <div class="c-form">
+          <form action="#" method="post">
+            <table>
+              <tbody>
+                <tr>
+                  <th>お名前※</th>
+                </tr>
+                <tr>
+                  <td><input class="m-c-category" type="text" name="お名前"  required=""></td>
+                </tr>
+                <tr>
+                  <th>メールアドレス※</th>
+                </tr>
+                <tr>
+                  <td><input class="m-c-category" type="email" name="メールアドレス" required=""></td>
+                </tr>
+                <tr>
+                  <th>お問い合わせ詳細※</th>
+                </tr>
+                <tr>
+                  <td><textarea class="m-c-detail" name="お問い合わせ" id="m-f-info" cols="30" rows="10" required=""></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="submit" value="内容を送信する" class="button">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      Copyright© <a href="#">HIRABA's Portfolio</a> All Rights Reserved.
+      <br>
+      <span class="secondp"><a href="#"></a></span>
+    </footer>
+
+
+  </div>
+
+</body>
+
+</html>
