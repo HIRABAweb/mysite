@@ -83,3 +83,9 @@
   }
   
 }
+@media screen and (max-width: 540px){
+  .h-logo{
+    width: 30%;
+    height: auto;
+  }
+}
