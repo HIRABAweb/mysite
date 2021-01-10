@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "[id and password]"
-AuthUserFile "C:/Users/rnaot/Documents/codebigin/ポートフォリオ制作/portfolio/.htpasswd"
-require valid-user
